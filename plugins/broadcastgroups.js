@@ -1,3 +1,4 @@
+/*
 import { randomBytes } from 'crypto'
 
 let handler = async (m, { conn, text }) => {
@@ -20,3 +21,4 @@ const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
 const randomID = length => randomBytes(Math.ceil(length * .5)).toString('hex').slice(0, length)
+*/
