@@ -1,4 +1,4 @@
-//source? Https://github.com/Rlxfly 
+/*//source? Https://github.com/Rlxfly 
 // Don't Delete Source! 
 import * as fs from 'fs'
 import { exec } from 'child_process'
@@ -44,3 +44,4 @@ function webpToVideo(bufferImage) {
 		}
 	})
 }
+*/
