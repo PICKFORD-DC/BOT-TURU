@@ -697,14 +697,14 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupname: await this.getName(id),
                                 membercount: groupMetadata.participants.length
                             })
-    conn.sendButtonDoc(id, text, wm, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'ok', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://instagram.com/Xiao_yan_21",
-    mediaType: 2, 
-    description: "https://youtu.be/-TleC8rbDT8", 
-    title: 'Elaina-MultiDevice',
-    body: wm,
+    conn.sendButtonDoc(id, text, wm, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? 'ok' : 'ok', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://youtube.com/channel/UCJdVJDRUImyBoEp_jdvJAvQ",
+    mediaType: 'VIDEO', 
+    description: "https://youtube.com/channel/UCJdVJDRUImyBoEp_jdvJAvQ", 
+    title: 'Subscribe My You Tube',
+    body: 'Click Photo',
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
-    sourceUrl: sig
+    sourceUrl: 'https://youtube.com/channel/UCJdVJDRUImyBoEp_jdvJAvQ'
      }}
   })
                     }
