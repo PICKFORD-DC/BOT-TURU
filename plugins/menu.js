@@ -313,8 +313,8 @@ let tek = `✧────···[ Dashboard ]···────✧
 │⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┬
 ├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ *ᴀᴜᴛʜᴏʀ :* ʙᴏᴄʜɪʟɢᴀᴍɪɴɢ
-┴ ▸ *ᴏᴡɴᴇʀ :* ɪᴍ-ʏᴀɴxɪᴀᴏ
+│ ▸ *ᴀᴜᴛʜᴏʀ :* PICKFORD
+┴ ▸ *BOT :* DITA-BOT
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
 │ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
@@ -659,7 +659,7 @@ const listMessage = {
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(.allmenu|allhelp|allmenu|\?)$/i
 
 handler.register = false
 handler.exp = 3
@@ -694,16 +694,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   let res = "Kok Belum Tidur Kak? 🥱"
   if (time >= 4) {
-    res = "Pagi Lord 🌄"
+    res = "Pagi Kak 🌄"
   }
   if (time >= 10) {
-    res = "Siang Lord ☀️"
+    res = "Siang Kak ☀️"
   }
   if (time >= 15) {
-    res = "Sore Lord 🌇"
+    res = "Sore Kak 🌇"
   }
   if (time >= 18) {
-    res = "Malam Lord 🌙"
+    res = "Malam Kak 🌙"
   }
   return res
 }
